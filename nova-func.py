@@ -1,9 +1,13 @@
-UnidadesDeMedida = ['bit', 'byte', 'Kilobyte', 'Megabyte', 'Gigabyte', 'Terabyte', 'Petabyte']
+UnidadesDeMedidas = ['bit', 'byte', 'Kilobyte', 'Megabyte', 'Gigabyte', 'Terabyte', 'Petabyte']
 
+def mostrarUnidadesDeMedida(unidadesDeMedidas):
+    print('Unidades de Medida Disponíveis:')
+    for i in unidadesDeMedidas:
+        print(i)
 
 def diferençaConversão(primeiraUnidade, unidadeParaConverter):
     contador = 0
-    for i in UnidadesDeMedida:
+    for i in UnidadesDeMedidas:
         if (primeiraUnidade == i):
             primeiraUnidade = contador
 
@@ -35,3 +39,6 @@ def conversão(primeiraUnidade, unidadeParaConverter, númeroParaConversão):
             númeroConvertido *= difDeConversão
             
     return númeroConvertido
+
+mostrarUnidadesDeMedida(UnidadesDeMedidas)
+
