@@ -1,15 +1,15 @@
 UnidadesDeMedida = ['bit', 'byte', 'Kilobyte', 'Megabyte', 'Gigabyte', 'Terabyte', 'Petabyte']
 
 
-def diferençaConversão(unidadeInicial, unidadeDeConversão):
+def diferençaConversão(primeiraUnidade, unidadeParaConverter):
     contador = 0
     for i in UnidadesDeMedida:
-        if (unidadeInicial == i):
-            unidadeInicial = contador
+        if (primeiraUnidade == i):
+            primeiraUnidade = contador
 
-        if (unidadeDeConversão == i):
-            unidadeDeConversão = contador
+        if (unidadeParaConverter == i):
+            unidadeParaConverter = contador
 
         contador += 1
-    fatorDeConversão = unidadeInicial - unidadeDeConversão
-    return int(fatorDeConversão)
+    difDeConversão = primeiraUnidade - unidadeParaConverter
+    return int(difDeConversão)
