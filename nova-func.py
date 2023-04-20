@@ -42,3 +42,12 @@ def conversão(primeiraUnidade, unidadeParaConverter, númeroParaConversão):
 
 mostrarUnidadesDeMedida(UnidadesDeMedidas)
 
+print('Digite a unidade de medida INICIAL do valor:')
+primeiraUnidade = input()
+print('Digite a unidade de medida FINAL do valor (a qual o valor será convertido):')
+unidadeParaConverter = input()
+print('Digite o número que será convertido:')
+númeroParaConversão = float(input())
+
+print('Resultado da conversão:')
+print(str(conversão(primeiraUnidade, unidadeParaConverter, númeroParaConversão)) + ' ' + unidadeParaConverter + 's')
