@@ -25,3 +25,13 @@ def conversão(primeiraUnidade, unidadeParaConverter, númeroParaConversão):
         if(unidadeParaConverter == 'bit'):
             númeroConvertido *= 8 
             difDeConversão -= 1 
+
+    if (difDeConversão < 0):
+            difDeConversão *= -1
+            difDeConversão = 1024 ** difDeConversão
+            númeroConvertido /= difDeConversão
+    elif(difDeConversão > 0):
+            difDeConversão = 1024 ** difDeConversão
+            númeroConvertido *= difDeConversão
+            
+    return númeroConvertido
